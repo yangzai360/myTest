@@ -24,9 +24,16 @@
     var u = navigator.userAgent;
     var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
     var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-    document.write('<p>Is Android?'+isAndroid+'</p>');
+    // document.write('<p>Is Android?'+isAndroid+'</p>');
 
-    document.write('Is iOS?'+isiOS);
+    if (isAndroid) {
+        document.write('<a href="http://user.wemeeting.net/android/user-andriod.apk">点击下载</a>')
+    } 
+    if (isiOS) {
+        document.write('<a href="https://www.apple.com/vn">点击下载</a>')
+    }
+
+    // document.write('Is iOS?'+isiOS);
 
 
 </script>
