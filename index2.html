@@ -2,47 +2,27 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title>title test</title>
-    <style type="text/css">
-        *{margin:0; padding:0;}
-        /*外层测试容器*/
-        .box{height:500px; width:100%; background:#ccc;}
-        /*针对ie6，7*/
-        .out{position:relative; width:100%; height:100%; overflow:hidden;}
-        .middle{position:absolute; top:50%; border:1px solid red;}
-        .in{position:relative; top:-50%; width:600px; margin:0 auto; border:1px solid blue;}
-        
-        .out[class]{position:static; *position:relative; _position:static; display:table;}
-        .middle[class]{position:static; *position:absolute; _position:static; display:table-cell; vertical-align:middle;}
-    </style>
+    <title>WeMeeting</title>
 </head>
 <body>
-<div class="box">
-<!--s 未知高度垂直居中-->
-    <div class="out">
-        <script type="text/javascript">
-    var u = navigator.userAgent;
-    var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1; //android终端
-    var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/); //ios终端
-    // document.write('<p>Is Android?'+isAndroid+'</p>');
+<div>
+    <script type="text/javascript">
+        var u = navigator.userAgent;
+        
+        var isAndroid = u.indexOf('Android') > -1 || u.indexOf('Adr') > -1;
+        var isiOS = !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/);
 
-    if (isAndroid) {
-        document.write('<a href="http://user.wemeeting.net/android/user-andriod.apk">点击 Android 客户端</a>')
-    } 
-    if (isiOS) {
-        document.write('<a href="https://www.pgyer.com/WeMeetingClient">点击下载 iOS 客户端</a>')
-    }
-
-    if (!isiOS & !isAndroid) {
-        document.write('<a href="http://user.wemeeting.net/">WeMeeTing 官网</a>')
-    }
-
-    // document.write('Is iOS?'+isiOS);
-
-
+        if (isAndroid) {
+            document.write('<a href="http://user.wemeeting.net/android/user-andriod.apk">点击 Android 客户端</a>')
+        } 
+        if (isiOS) {
+            document.write('<a href="https://www.pgyer.com/WeMeetingClient">点击下载 iOS 客户端</a>')
+        }
+        if (!isiOS & !isAndroid) {
+            document.write('<a href="http://user.wemeeting.net/">WeMeeTing 官网</a>')
+        }
 </script>
-    </div>
-<!--e 未知高度垂直居中-->
+
 </div>
 </body>
 </html>
