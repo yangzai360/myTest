@@ -27,10 +27,14 @@
     // document.write('<p>Is Android?'+isAndroid+'</p>');
 
     if (isAndroid) {
-        document.write('<a href="http://user.wemeeting.net/android/user-andriod.apk">点击下载</a>')
+        document.write('<a href="http://user.wemeeting.net/android/user-andriod.apk">点击 Android 客户端</a>')
     } 
     if (isiOS) {
-        document.write('<a href="https://www.apple.com/vn">点击下载</a>')
+        document.write('<a href="https://www.pgyer.com/WeMeetingClient">点击下载 iOS 客户端</a>')
+    }
+
+    if (!isiOS & !isAndroid) {
+        document.write('<a href="http://user.wemeeting.net/">WeMeeTing 官网</a>')
     }
 
     // document.write('Is iOS?'+isiOS);
